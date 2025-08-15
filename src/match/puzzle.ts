@@ -1,6 +1,6 @@
 import {Active_sessions} from "../auth/account";
 import {DatabaseConn} from "../database/init";
-const NumberOfPuzzles = 4200322
+const NumberOfPuzzles = 4824507
 export async function GetPuzzle(req: any): Promise<string|null> {
     let token = req.header('authorization')
     if (!token || !Active_sessions.get(token)) {
